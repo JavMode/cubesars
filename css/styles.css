@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+
+/** Header **/
+.nombre-sitio{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 5rem;
+}
+.nombre-sitio span{
+    color: green;
+}
+
+/** Navegacion **/
+.contenedor-navegacion{
+    border-top: .1rem solid #e1e1e1;
+}
+.navegacion-principal{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacion-principal a{
+    text-decoration: none;
+    color: #000;
+}
+
+/** Imagen **/
+.hero{
+    background-image: url(../img/foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100rem;
+}
+
+/** Nosotros **/
+.nosotros h2{
+    text-align: center;
+}
+.sobre-nosotros {
+    background-image: linear-gradient( to right, transparent 50%, green 50%, green 100% ), url(../img/foto1.jpg);
+    background-position: center, top left;
+    background-repeat: no-repeat;
+    background-size: 100%, 90rem;
+    padding: 10rem 0;
+}
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10rem;
+}
+.texto-nosotros {
+    grid-column: 2/3;
+    color: #000;
+    padding: 5rem;
+}
+
+/**Miembro**/
+.miembro{
+    background-image: linear-gradient( to right, transparent 50%, green 50%, green 100% ), url(../img/pedro.jpg);
+    background-position: center, top left;
+    background-repeat: no-repeat;
+    background-size: 100%, 60rem;
+    padding: 10rem 0;
+    margin-bottom: 5rem;
+}
+.miembro-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10rem;
+}
+.miembro-info{
+    grid-column: 2/3;
+    color: #000;
+    padding: 5rem;
+}
