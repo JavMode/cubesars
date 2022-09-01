@@ -6,7 +6,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
 }
@@ -47,6 +47,7 @@ img {
 .navegacion-principal a{
     text-decoration: none;
     color: #000;
+    font-weight: 300;
 }
 
 /** Imagen **/
@@ -59,8 +60,10 @@ img {
 }
 
 /** Nosotros **/
-.nosotros h2{
+.nosotros-titulo{
     text-align: center;
+    font-size: 4rem;
+    color: green;
 }
 .sobre-nosotros {
     background-image: linear-gradient( to right, transparent 50%, green 50%, green 100% ), url(../img/foto1.jpg);
@@ -81,21 +84,106 @@ img {
 }
 
 /**Miembro**/
-.miembro{
+/* .miembro{
     background-image: linear-gradient( to right, transparent 50%, green 50%, green 100% ), url(../img/pedro.jpg);
     background-position: center, top left;
     background-repeat: no-repeat;
     background-size: 100%, 60rem;
     padding: 10rem 0;
     margin-bottom: 5rem;
+} */
+.miembro{
+    padding: 2rem 0;
+}
+.titulo{
+    font-size: 4rem;
+    color: green;
 }
 .miembro-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 10rem;
+    background-color: green;
 }
 .miembro-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.miembro-info-1{
     grid-column: 2/3;
     color: #000;
     padding: 5rem;
+}
+.miembro-info-2{
+    grid-column: 1/2;
+    color: #000;
+    padding: 5rem;
+}
+.miembro-info-3{
+    grid-column: 2/3;
+    color: #000;
+    padding: 5rem;
+}
+
+/** Redes **/
+.redes{
+    padding: 15rem 0;
+    position: relative;
+    margin-top: 5rem;
+    overflow: hidden;
+    background-color: green;
+}
+.redes:after,
+.redes:before{
+    background-color: white;
+    content: "";
+    height: 20rem;
+    width: 120%;
+    position: absolute;
+}
+.redes::before{
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+.redes::after{
+    transform: rotate(3deg);
+    bottom: -10rem;
+    left: -1rem;
+}
+.redes h2{
+    color: white;
+    font-size: 4rem;
+}
+.redes-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5rem;
+    align-items: center;
+}
+.redes-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes-lista a{
+    text-decoration: none;
+    font-size: 4rem;
+}
+.redes-elemento{
+    margin: 5rem 0;
+    padding: 2rem;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+    transition: transform .3s;
+    background-color: white;
+}
+.redes-elemento:hover{
+    transform: scale(1.1);
+}
+.facebook a{
+    color: #3b5998;
+}
+.instagram a{
+    color: #C13584;
 }

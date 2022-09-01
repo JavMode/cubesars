@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CubeSars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header>
@@ -17,30 +22,29 @@
         <nav class="navegacion-principal contenedor">
             <a href="">Nosotros</a>
             <a href="">Nuestros miembros</a>
-            <a href="">Nuestros podios</a>
-            <a href="">Contacto</a>
             <a href="">Nuestras redes</a>
         </nav>
     </div>
 
     <div class="hero"></div>
 
-    <h2 class="text-center">Sobre Nosotros</h2>
+    <h2 class="text-center nosotros-titulo">Sobre Nosotros</h2>
     <section class="sobre-nosotros">
-        
         <div class="contenedor sobre-nosotros-grid">
             <div class="texto-nosotros">
-                
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatum fugiat numquam sunt error, odit nostrum sed adipisci minima ipsum labore asperiores. Assumenda delectus necessitatibus iusto, dolore vel quod blanditiis!</p>
             </div>
         </div>
     </section>
 
     <main class="contenido-principal contenedor">
-        <h2 class="text-center">Nuestros Miembros</h2>
+        <h2 class="text-center titulo">Nuestros Miembros</h2>
         <div class="miembro">
             <div class="miembro-grid contenedor">
-                <div class="miembro-info">
+                <div>
+                    <img src="img/pedro.jpg" alt="">
+                </div>
+                <div class="miembro-info miembro-info-1">
                     <h2>Pedro García</h2>
                     <p>Yo soy el jefe y el más malo al mismo tiempo :v</p>
                 </div>
@@ -49,22 +53,54 @@
 
         <div class="miembro">
             <div class="miembro-grid contenedor">
-                <div class="miembro-info">
+                <div class="miembro-info miembro-info-2">
                     <h2>Benjamín Ochoa</h2>
                     <p>a</p>
+                </div>
+                <div>
+                    <img src="img/benjamin.jpg" alt="">
                 </div>
             </div>
         </div> <!-- miembro -->
 
         <div class="miembro">
             <div class="miembro-grid contenedor">
-                <div class="miembro-info">
+                <div>
+                    <img src="img/ricardo.jpg" alt="">
+                </div>
+                <div class="miembro-info miembro-info-3">
                     <h2>Ricardo Laurencio</h2>
                     <p>OLA</p>
                 </div>
             </div>
         </div> <!-- miembro -->
     </main>
+
+    <section class="redes">
+        <div class="redes_contenedor">
+            <h2 class="text-center">Nuestras redes</h2>
+            <div class="redes-grid">
+                <div class="redes-lista">
+                    <div class="redes-elemento facebook">
+                            <a href="https://www.facebook.com/CubeSarsTeam">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                CubeSars Team
+                            </a>
+                    </div>
+                    <div class="redes-elemento instagram">
+                            <a href="https://www.instagram.com/team_cubesars/">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                @team_cubesars
+                            </a>
+                    </div>
+                </div>
+                <div class="redes-imagen">
+                    <img src="img/redes.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p class="text-center">&#0169;2022 CubeSars Team</p>
     </footer>
