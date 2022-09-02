@@ -30,7 +30,7 @@ img {
     font-size: 5rem;
 }
 .nombre-sitio span{
-    color: green;
+    color: #5d8b60;
 }
 
 /** Navegacion **/
@@ -56,20 +56,20 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100rem;
+    height: 120rem;
 }
 
 /** Nosotros **/
 .nosotros-titulo{
     text-align: center;
     font-size: 4rem;
-    color: green;
+    color: #5d8b60;
 }
 .sobre-nosotros {
-    background-image: linear-gradient( to right, transparent 50%, green 50%, green 100% ), url(../img/foto1.jpg);
+    background-image: linear-gradient( to right, transparent 50%, #0e631e 50%, #267c43 100% ), url(../img/foto1.jpg);
     background-position: center, top left;
     background-repeat: no-repeat;
-    background-size: 100%, 90rem;
+    background-size: 100%, 80rem;
     padding: 10rem 0;
 }
 .sobre-nosotros-grid{
@@ -97,18 +97,19 @@ img {
 }
 .titulo{
     font-size: 4rem;
-    color: green;
+    color: #5d8b60;
 }
 .miembro-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: green;
+    background-color: #5d8b60;
 }
 .miembro-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/fondo.jpg);
 }
 .miembro-info-1{
     grid-column: 2/3;
@@ -132,7 +133,7 @@ img {
     position: relative;
     margin-top: 5rem;
     overflow: hidden;
-    background-color: green;
+    background-color: #5d8b60;
 }
 .redes:after,
 .redes:before{
